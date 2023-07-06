@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'print/bluetooth_print_page.dart';
 import 'print/connect_bluetooth_printer.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -32,9 +33,9 @@ class MyWidget extends StatelessWidget {
             ),
             OutlinedButton(
               onPressed: () {
-                push(context, const ConnectBluetoothPrinter());
+                push(context, const BluetoothPrintPage());
               },
-              child: const Text("Bluetooth Print"),
+              child: const Text("Print"),
             ),
           ],
         ),
